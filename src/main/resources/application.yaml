@@ -1,0 +1,38 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: luis-mario-martinez-perez
+
+  # Configuración del servidor RabbitMQ
+  rabbitmq:
+    host: 84.46.241.34
+    port: 5672
+    username: admin
+    password: cambia_esta_password
+
+  # Configuración SMTP (Credenciales de la clase)
+  mail:
+    host: smtp.resend.com
+    port: 465
+    username: resend
+    password: re_LzNwdWAW_PJ7NeQrV5t2Z8K3HJQb7qAAx
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+
+# Variables personalizadas de la aplicación
+app:
+  storage:
+    path: ./storage
+  rabbitmq:
+    exchange: reflexiones.exchange
+    queue: reflexiones.queue
+    routing-key: reflexiones.routing.key
+  email:
+    target: lsmrtnz04@gmail.com
+    from: noreply@irya.xyz
