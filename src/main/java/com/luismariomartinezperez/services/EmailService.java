@@ -34,7 +34,7 @@ public class EmailService {
             String subject = "practica-final | " + request.nombreCompleto().trim().toLowerCase().replaceAll("\\s+", "-");
             String htmlBody = HtmlTemplateBuilder.buildModernEmail(request.nombreCompleto());
 
-            helper.setFrom(fromEmail);
+            helper.setFrom(fromEmail,"LuisMartinez");
             // Enviamos el correo a la dirección destino por defecto y al correo del estudiante
             helper.setTo(new String[]{defaultTargetEmail, request.correo()});
             helper.setSubject(subject);

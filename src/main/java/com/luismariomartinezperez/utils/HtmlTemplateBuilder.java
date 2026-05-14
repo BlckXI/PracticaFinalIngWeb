@@ -17,12 +17,12 @@ public class HtmlTemplateBuilder {
         </head>
         <body>
             <div class="container">
-                <h2>Práctica Final Procesada</h2>
+                <h2>Práctica Final</h2>
                 <p>Hola,</p>
                 <p>Se ha procesado exitosamente la reflexión de <strong>%s</strong>.</p>
-                <p>En este correo se adjuntan los archivos generados en formato TXT y su versión comprimida en ZIP para respaldo.</p>
+                <p>En este correo se adjuntan los archivos generados en formato TXT y su versión comprimida en ZIP para que me crea.</p>
                 <div class="footer">
-                    &copy; 2026 ColibriHub - Sistema de Procesamiento Asíncrono
+                    &copy; 2026 :)
                 </div>
             </div>
         </body>
